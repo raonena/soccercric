@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="css/animate.css">
 <link rel="stylesheet" href="css/icomoon.css">
 <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/custom.css">
 <link rel="stylesheet" href="css/color-1.css">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="css/responsive.css">
@@ -37,7 +38,7 @@
 <body>
 
 <!-- Preloader -->
-<!-- <div id="status">
+<div id="status">
 	<div id="preloader">
 		<div class="preloader position-center-center">
 			<span></span>
@@ -46,7 +47,7 @@
 			<span></span>
 		</div>
 	</div>
-</div> -->
+</div> 
 <!-- Preloader -->
 
 <!-- Wrapper -->
@@ -1150,30 +1151,24 @@
 <div class="modal fade login-modal" id="login-modal" role="dialog">
 	<div class="position-center-center" role="document">
 		<div class="modal-content">
-			<strong>Register</strong>
+			<strong>Login</strong>
 			<button class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-			<div class="social-options">
-				<ul>
-					<li><a class="facebook" href="#"><i class="fa fa-facebook"></i>Register with facebook</a></li>
-					<li><a class="twitter" href="#"><i class="fa fa-twitter"></i>Register with twitter</a></li>
-					<li><a class="google" href="#"><i class="fa fa-google-plus"></i>Register with gmail+</a></li>
-				</ul>
-			</div>
 			<form class="sending-form">
 				<div class="form-group">
-					<input class="form-control" required="required" placeholder="Full name">
+					<input class="form-control" required="required" placeholder="Username">
 					<i class="fa fa-user"></i>
 				</div>
-				<div class="form-group">
-					<input class="form-control" required="required" placeholder="Email Address">
-					<i class="fa fa-user"></i>
-				</div>
+				
 				<div class="form-group">
 					<input class="form-control" type="password" required="required" placeholder="Password">
-					<i class="fa fa-user"></i>
+					<i class="fa fa-lock"></i>
 				</div>
-				<p class="terms">You agree to the hldy.hr <a href="#">Terms &amp; Conditions</a></p>
-				<button class="btn-1 shadow-0 full-width">Register account</button>
+				<button class="btn-1 shadow-0 full-width">Login <i class="fa fa-sign-in ml-1"></i></button>
+                <div class="login_modal">
+                    <p>Not a member? <a href="register.html" class="blue-text">Register</a></p>
+                    <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+                </div>
+                
 			</form>
 		</div>
 	</div>
