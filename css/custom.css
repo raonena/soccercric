@@ -1,0 +1,14 @@
+.login_modal{
+    text-align: right;
+    padding-top: 2%;
+}
+.login_modal a{
+    display: inline-block;
+}
+.blue-text{
+    color: dodgerblue;
+}
+#success_message{ display: none;}
+.breaker{
+   margin-top: 40px;
+}
