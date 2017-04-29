@@ -7,8 +7,11 @@
 }
 .blue-text{
     color: dodgerblue;
+<<<<<<< HEAD
 }
 #success_message{ display: none;}
 .breaker{
    margin-top: 40px;
+=======
+>>>>>>> b4ea416801dc674e1b185936c768e6caf4c628da
 }
