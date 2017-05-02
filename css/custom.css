@@ -12,3 +12,9 @@
 .breaker{
    margin-top: 40px;
 }
+.child_info{
+    width: 200%;
+}
+.hide {
+  display: none;
+}
