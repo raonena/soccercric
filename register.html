@@ -220,7 +220,8 @@
 								<ul>
 									<li><a href="about.html">about</a></li>
 									<li><a href="gallery.html">gallery</a></li>
-									<li><a href="author.html">coaches</a></li>
+									<li><a href="event-list.html">event list</a></li>
+									<li><a href="event-detail.html">event detail</a></li>
 									<li><a href="404.html">404</a></li>
 								</ul>
 							</li>
@@ -228,7 +229,7 @@
 								<a href="#"><i class="fa fa-file-text"></i>Parents</a>
 								<ul>
 									<li><a href="author.html">What Parents Say</a></li>
-									<li><a href="faq.html">FAQs</a></li>
+									<li><a href="author-detail.html">FAQs</a></li>
 								</ul>
 							</li>
 							<li><a href="contact.html"><i class="fa fa-fax"></i>contact</a></li>
@@ -480,114 +481,116 @@
                     </center>
                 </legend><br>
                 
-                <div class="row ">
-                    <div class="col-md-6 col-lg-6">
-                         
-                        <!-- Text input-->
-                        <div class="form-group">
-                            <label class="col-md-4 control-label">First Name</label>
-                            <div class="col-md-4 inputGroupContainer">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input name="first_name" placeholder="First Name" class="form-control" type="text" required="required" style="width:200%">
+                <div class="child">
+                    <div class="row ">
+                        <div class="col-md-6 col-lg-6">
+
+                            <!-- Text input-->
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">First Name</label>
+                                <div class="col-md-4 inputGroupContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input name="first_name" placeholder="First Name" class="form-control" type="text" required="required" style="width:200%">
+                                    </div>
                                 </div>
                             </div>
+
+                            <!-- Text input-->
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">Last Name</label>
+                                <div class="col-md-4 inputGroupContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input name="last_name" placeholder="Last Name" class="form-control" type="text" required="required" style="width:200%">
+                                    </div>
+                                </div>
+                            </div> 
+
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">Gender</label>
+                                <div class="col-md-4 selectContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                                        <select name="gender" class="form-control selectpicker">
+                                            <option value="">Male</option>
+                                            <option value="">Female</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">Date of Birth</label>
+                                <div class="col-md-4 inputGroupContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input type="date" class="form-control" id="exampleInputDOB1" placeholder="Date of Birth" required="required" style="width:124%">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">Class Coordinator (if applicable)</label>
+                                <div class="col-md-4 inputGroupContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input name="class_coordinator" placeholder="Class Coordinator Name" class="form-control" type="text" required="required" style="width:200%">
+                                    </div>
+                                </div>
+                            </div>
+
+
+
                         </div>
-
-                        <!-- Text input-->
-
-                        <div class="form-group">
-                            <label class="col-md-4 control-label">Last Name</label>
-                            <div class="col-md-4 inputGroupContainer">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input name="last_name" placeholder="Last Name" class="form-control" type="text" required="required" style="width:200%">
+                        <div class="col-md-6 col-lg-6">
+                             <!-- Text input-->
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">School Currently Attending</label>
+                                <div class="col-md-4 inputGroupContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input name="school" placeholder="School Currently Attending" class="form-control" type="text" required="required" style="width:200%">
+                                    </div>
                                 </div>
                             </div>
-                        </div> 
-
-
-                        <div class="form-group">
-                            <label class="col-md-4 control-label">Gender</label>
-                            <div class="col-md-4 selectContainer">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                                    <select name="gender" class="form-control selectpicker">
-                                        <option value="">Male</option>
-                                        <option value="">Female</option>
-                                    </select>
+                            <!-- Text input-->
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">Relation with child</label>
+                                <div class="col-md-4 inputGroupContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input name="relation" placeholder="Relation with child" class="form-control" type="text" required="required" style="width:200%">
+                                    </div>
                                 </div>
                             </div>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">Types of soccercric</label>
+                                <div class="col-md-4 selectContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                                        <select name="gender" class="form-control selectpicker">
+                                            <option value="">Soccer</option>
+                                            <option value="">Cricket</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Text input-->
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">Child medical condition <br> <span style="font-size:10px">Please indicate any relevant medical conditions or allergies your child may have (not required if your child has no relevant medical issues)</span></label>
+                                <div class="col-md-4 inputGroupContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input name="relation" placeholder="Child medical condition" class="form-control" type="text" required="required" style="width:200%">
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-
-
-
-                        <div class="form-group">
-                            <label class="col-md-4 control-label">Date of Birth</label>
-                            <div class="col-md-4 inputGroupContainer">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input type="date" class="form-control" id="exampleInputDOB1" placeholder="Date of Birth" required="required" style="width:124%">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-md-4 control-label">Class Coordinator (if applicable)</label>
-                            <div class="col-md-4 inputGroupContainer">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input name="class_coordinator" placeholder="Class Coordinator Name" class="form-control" type="text" required="required" style="width:200%">
-                                </div>
-                            </div>
-                        </div>
-
-                       
-                    
-                    </div>
-                    <div class="col-md-6 col-lg-6">
-                         <!-- Text input-->
-                        <div class="form-group">
-                            <label class="col-md-4 control-label">School Currently Attending</label>
-                            <div class="col-md-4 inputGroupContainer">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input name="school" placeholder="School Currently Attending" class="form-control" type="text" required="required" style="width:200%">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Text input-->
-                        <div class="form-group">
-                            <label class="col-md-4 control-label">Relation with child</label>
-                            <div class="col-md-4 inputGroupContainer">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input name="relation" placeholder="Relation with child" class="form-control" type="text" required="required" style="width:200%">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-md-4 control-label">Types of soccercric</label>
-                            <div class="col-md-4 selectContainer">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                                    <select name="gender" class="form-control selectpicker">
-                                        <option value="">Soccer</option>
-                                        <option value="">Cricket</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Text input-->
-                        <div class="form-group">
-                            <label class="col-md-4 control-label">Child medical condition <br> <span style="font-size:10px">Please indicate any relevant medical conditions or allergies your child may have (not required if your child has no relevant medical issues)</span></label>
-                            <div class="col-md-4 inputGroupContainer">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input name="relation" placeholder="Child medical condition" class="form-control" type="text" required="required" style="width:200%">
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
                 <button name="addDom" class="btn btn-warning"> Add Child</button>
@@ -931,23 +934,22 @@
 <script src="js/classie.js"></script>					
 <script src="js/main.js"></script>	
 <script type="text/javascript">
-        $(document).ready(function() {
+        
+$(document).ready(function() {
        
         $("button[name='addDom']").click(function() {
-            var domElement = $('<div class="row " id="removechild"><hr><div class="col-md-6 col-lg-6"><div class="form-group"><label class="col-md-4 control-label">First Name</label><div class="col-md-4 inputGroupContainer"><div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input name="first_name" placeholder="First Name" class="form-control" type="text" required="required" style="width:200%"></div></div></div><div class="form-group"><label class="col-md-4 control-label">Last Name</label><div class="col-md-4 inputGroupContainer"><div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input name="last_name" placeholder="Last Name" class="form-control" type="text" required="required" style="width:200%"></div></div></div><div class="form-group"><label class="col-md-4 control-label">Gender</label><div class="col-md-4 selectContainer"><div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span><select name="gender" class="form-control selectpicker"> <option value="">Male</option><option value="">Female</option></select></div></div></div><div class="form-group"><label class="col-md-4 control-label">Date of Birth</label><div class="col-md-4 inputGroupContainer"><div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input type="date" class="form-control" id="exampleInputDOB1" placeholder="Date of Birth" required="required" style="width:124%"></div></div></div><div class="form-group"><label class="col-md-4 control-label">Class Coordinator (if applicable)</label><div class="col-md-4 inputGroupContainer"><div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input name="class_coordinator" placeholder="Class Coordinator Name" class="form-control" type="text" required="required" style="width:200%"></div></div></div></div><div class="col-md-6 col-lg-6"><div class="form-group"><label class="col-md-4 control-label">School Currently Attending</label><div class="col-md-4 inputGroupContainer"><div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input name="school" placeholder="School Currently Attending" class="form-control" type="text" required="required" style="width:200%"></div></div></div><div class="form-group"><label class="col-md-4 control-label">Relation with child</label><div class="col-md-4 inputGroupContainer"><div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> <input name="relation" placeholder="Relation with child" class="form-control" type="text" required="required" style="width:200%"></div></div></div><div class="form-group"><label class="col-md-4 control-label">Types of soccercric</label><div class="col-md-4 selectContainer"><div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span><select name="gender" class="form-control selectpicker"><option value="">Soccer</option><option value="">Cricket</option></select></div></div></div><div class="form-group"><label class="col-md-4 control-label">Child medical condition <br> <span style="font-size:10px">Please indicate any relevant medical conditions or allergies your child may have (not required if your child has no relevant medical issues)</span></label><div class="col-md-4 inputGroupContainer"><div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input name="relation" placeholder="Child medical condition" class="form-control" type="text" required="required" style="width:200%"></div></div></div</div</div><br><br><br><button onclick="clearBox()" class="btn btn-danger">Remove Child</button><hr>');
-            $(this).after(domElement);
+            
+            var domElement = $('<div class="child"><div class="row "><hr><div class="col-md-6 col-lg-6"><div class="form-group"><label class="col-md-4 control-label">First Name</label><div class="col-md-4 inputGroupContainer"><div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input name="first_name" placeholder="First Name" class="form-control" type="text" required="required" style="width:200%"></div></div></div><div class="form-group"><label class="col-md-4 control-label">Last Name</label><div class="col-md-4 inputGroupContainer"><div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input name="last_name" placeholder="Last Name" class="form-control" type="text" required="required" style="width:200%"></div></div></div><div class="form-group"><label class="col-md-4 control-label">Gender</label><div class="col-md-4 selectContainer"><div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span><select name="gender" class="form-control selectpicker"> <option value="">Male</option><option value="">Female</option></select></div></div></div><div class="form-group"><label class="col-md-4 control-label">Date of Birth</label><div class="col-md-4 inputGroupContainer"><div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input type="date" class="form-control" id="exampleInputDOB1" placeholder="Date of Birth" required="required" style="width:124%"></div></div></div><div class="form-group"><label class="col-md-4 control-label">Class Coordinator (if applicable)</label><div class="col-md-4 inputGroupContainer"><div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input name="class_coordinator" placeholder="Class Coordinator Name" class="form-control" type="text" required="required" style="width:200%"></div></div></div></div><div class="col-md-6 col-lg-6"><div class="form-group"><label class="col-md-4 control-label">School Currently Attending</label><div class="col-md-4 inputGroupContainer"><div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input name="school" placeholder="School Currently Attending" class="form-control" type="text" required="required" style="width:200%"></div></div></div><div class="form-group"><label class="col-md-4 control-label">Relation with child</label><div class="col-md-4 inputGroupContainer"><div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> <input name="relation" placeholder="Relation with child" class="form-control" type="text" required="required" style="width:200%"></div></div></div><div class="form-group"><label class="col-md-4 control-label">Types of soccercric</label><div class="col-md-4 selectContainer"><div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span><select name="gender" class="form-control selectpicker"><option value="">Soccer</option><option value="">Cricket</option></select></div></div></div><div class="form-group"><label class="col-md-4 control-label">Child medical condition <br> <span style="font-size:10px">Please indicate any relevant medical conditions or allergies your child may have (not required if your child has no relevant medical issues)</span></label><div class="col-md-4 inputGroupContainer"><div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input name="relation" placeholder="Child medical condition" class="form-control" type="text" required="required" style="width:200%"></div></div></div</div</div><br><br><br><button class="removeChild btn btn-danger">Remove Child</button><hr></div>');
+       
+       $(this).before(domElement);
         });
+       $(document).on('click','button.removeChild',function(){
+         $(this).closest('div.child').remove();
+       });
     
 });
-    
 </script>
-<script type="text/javascript">
-    function clearBox(removechild)
-    {
-        document.getElementById('removechild').innerHTML = "";
-    }
-    $("#removechild").html("");
-</script>
+
 <script type="text/javascript">
           $(document).ready(function() {
             $('#contact_form').bootstrapValidator({
