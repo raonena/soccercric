@@ -227,11 +227,11 @@ box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.39);}
 .topbar{ background: #1e293d; padding: 15px 0;}
 
 /* Online Option */
-.online-option{ float: left;}
-.online-option ul li{ float: left;}
-.online-option ul li::before{ content: "\f111"; float: left; color: #fff; font-family: fontawesome; font-size: 4px; margin: 5px 10px 0 10px;} 
-.online-option ul li:first-child::before{ display: none;}
-.online-option ul li a{ color: #fff; font-size: 11px; text-transform: uppercase; float: left;}
+.online-option{ float: left; margin: 0 30px 0 0;}
+.online-option ul li{ float: left;margin: 0 0 0 30px;}
+.online-option ul li:first-child{margin: 0;}
+.online-option ul li i{ color: #fff; font-size: 16px;margin: 0 10px 0 0;}
+.online-option ul li a{ color: #fff; font-size: 12px;}
 
 /* Cart Option */
 .cart-option{ float: right; margin: 0 30px 0 0;}

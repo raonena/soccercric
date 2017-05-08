@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>SoccerCric</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      
+    <style>
+        html {
+  background: url('http://cdn.willhalling.com/img/pink-cloud.jpg') no-repeat center center fixed; 
+  background-size: cover;
+  height: 100%;
+}
+
+body {
+  background: transparent;
+  height: 100%;
+}
+
+.wrap {
+  /* OLD browser support */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  -moz-box-wrap: nowrap;
+  -webkit-box-wrap: nowrap;
+  -ms-flexbox-wrap: nowrap;
+  -moz-box-direction: column;
+  -webkit-box-direction: column;
+  -ms-flexbox-direction: column;
+  /* END OLD browser support */
+
+  display: flex; /* or inline-flex */
+  flex-direction: column; /* or usually or row */
+  justify-content: space-between;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+}
+
+.logo {
+  -ms-transform: rotate(-3deg); /* IE 9 */
+  -webkit-transform: rotate(-3deg); /* Safari */
+  transform: rotate(-3deg);
+  padding-top: 20px;
+}
+
+.logo a {
+  /* Google font: https://www.google.com/fonts/specimen/Kaushan+Script */
+  font-family: 'Kaushan Script', cursive;
+  color: black;
+  font-size: 36px;
+  padding: 10px;
+  opacity: 0.75;
+
+}
+
+.logo a .logo-alt {
+  color: #FFF;
+  font-size: 24px;
+}
+
+.logo a:hover, .logo a:focus {
+  text-decoration: none;
+  opacity: 1.0;
+}
+
+h2 {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 600px;
+  color: black;
+  opacity: 0.75;
+}
+
+p {
+  margin: 0;
+}
+
+#countdown {
+  color: black;
+  display: flex;
+  max-width: 360px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+#countdown .countdown-section {
+  padding: 0 15px;
+  border-right: 1px solid rgba(255, 255, 255, 0.36);
+}
+
+#countdown .countdown-section:last-child {
+  border-right: 0;
+}
+
+#countdown .countdown-section .h1 {
+  opacity: 0.75;
+}
+
+#countdown .countdown-section .text-center {
+  color: black;
+  opacity: 1.0
+}
+
+.share {
+  position: relative;
+  padding: 6px 12px 6px 35px;
+  color: black;
+  border: 1px solid black;
+}
+
+.share:hover {
+  color: black;
+  text-decoration: underline;
+  background-color: rgba(255, 255, 255, 0.36);        
+}
+
+.share-twitter {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  top: 3px;
+  left: 7px;
+}
+
+.btn-default {
+
+
+}
+
+.site-footer {
+  color: #FFF;
+  font-size: 0.875em /* 14px */
+    height: 54px;
+  padding-bottom: 20px;
+}
+
+a {
+  color: #ff3399;
+  text-decoration: none;
+}  
+      
+    </style>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrap">
+          <div class="logo text-center">
+            <a href="#" title="grateful.today">Soccer<span class="logo-alt">Cric</span></a>
+          </div>
+          <h2 class="text-center">Website coming soon!</h2>    
+          <div id="countdown">  
+            <div class="countdown-section">
+              <span class="h1 days">-</span>
+              <div class="text-center">DAYS</div>
+            </div>
+            <div class="countdown-section">
+              <span class="h1 hours">-</span>
+              <div class="text-center">HRS</div>
+            </div>
+            <div class="countdown-section">
+              <span class="h1 minutes"></span>
+              <div class="text-center">MINS</div>
+            </div>
+            <div class="countdown-section">
+              <span class="h1 seconds"></span>
+              <div class="text-center">SECS</div>
+            </div>
+          </div>
+          <p class="text-center"><a class="btn share" href="https://twitter.com/home?status=Blog Post: Coming Soon page with Flexbox %26 JavaScript willhalling.com/blog/coming-soon-page-with-flexbox-javascript/" target="_blank" title="Share on Twitter"><svg class="share-twitter" viewBox="0 0 512 512"><path d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z"></path></svg>Share on Twitter</a></p>
+          <footer class="site-footer text-center">
+            <span>&copy; www.soccercric.com| What are you grateful for today?</span>
+          </footer>
+        </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      
+      <script type="text/javascript">
+        // http://www.sitepoint.com/build-javascript-countdown-timer-no-dependencies/
+// http://codepen.io/SitePoint/pen/MwNPVq
+function getTimeRemaining(endtime){
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor( (t/1000) % 60 );
+  var minutes = Math.floor( (t/1000/60) % 60 );
+  var hours = Math.floor( (t/(1000*60*60)) % 24 );
+  var days = Math.floor( t/(1000*60*60*24) );
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
+
+function initializeClock(id, endtime){
+  var clock = document.getElementById(id);
+  var daysSpan = clock.querySelector('.days');
+  var hoursSpan = clock.querySelector('.hours');
+  var minutesSpan = clock.querySelector('.minutes');
+  var secondsSpan = clock.querySelector('.seconds');
+
+  function updateClock(){
+    var t = getTimeRemaining(endtime);
+    daysSpan.innerHTML = t.days;
+    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+    if(t.total<=0){
+      clearInterval(timeinterval);
+    }
+  }
+
+  updateClock();
+  var timeinterval = setInterval(updateClock,1000);
+}
+
+// LAUNCH DATE
+// USE CHRISTMAS DAY so countdown is not a negative value for foreseeable future
+var deadline = 'May 15 2017 00:00:00 UTC';
+initializeClock('countdown', deadline);
+      
+      </script>
+  </body>
+</html>
